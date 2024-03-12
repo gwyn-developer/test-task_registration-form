@@ -4,7 +4,7 @@ Simple vue app - registration form.<br/>
 Deployed with vercel.com using serverless function.
 
 ## Demo
-[https://[test-task_registration-form.vercel.app](https://test-task-registration-form-omega.vercel.app/)]
+[https://test-task_registration-form.vercel.app](https://test-task-registration-form-omega.vercel.app/)
 
 ## Launch project locally
 ```
