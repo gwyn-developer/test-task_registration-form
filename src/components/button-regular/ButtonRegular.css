@@ -1,0 +1,40 @@
+.button-regular__value {
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 302px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 19px;
+  color: var(--blue-2);
+  background-color: rgba(73, 122, 218, 0.2);
+  padding-top: 11px;
+  padding-bottom: 10px;
+  font-family: var(--main-font-family)
+}
+
+.button-regular__value:hover {
+  background-color: rgba(73, 122, 218, 0.4);
+}
+
+.button-regular__value:active{
+  background-color: var(--blue);
+}
+
+.button-regular__value_disabled {
+  background-color: var(--grey-3);
+  color: var(--white);
+  cursor: not-allowed;
+}
+
+.button-regular__value_disabled:hover {
+  background-color: var(--grey-4);
+  color: var(--white);
+  cursor: not-allowed;
+}

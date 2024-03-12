@@ -1,0 +1,119 @@
+.custom-checkbox__label {
+  user-select: none;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  font-size: 22px;
+  margin-right: 13.95px;
+}
+ 
+@media (max-width: 374px) {
+  .custom-checkbox__label {
+    padding: 7px;
+  }
+}
+ 
+.custom-checkbox__label_disabled {
+  cursor: not-allowed;
+}
+ 
+.custom-checkbox__input {
+  position: absolute;
+  z-index: -100;
+  opacity: 0;
+}
+ 
+.custom-checkbox__input:checked + .custom-checkbox__checkmark {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+ 
+.custom-checkbox__input:checked + .custom-checkbox__checkmark::after {
+  opacity: 1;
+}
+ 
+.custom-checkbox__input:disabled + .custom-checkbox__checkmark {
+  background-color: var(--grey-2);
+  border-color: var(--grey-2);
+  cursor: not-allowed;
+}
+ 
+.custom-checkbox__input:disabled + .custom-checkbox__checkmark::after {
+  opacity: 1;
+}
+ 
+.custom-checkbox__checkmark {
+  width: 19px;
+  height: 17px;
+  position: relative;
+  display: block;
+  background-color: var(--white);
+  border: 2px solid var(--grey-2);
+  border-radius: 5px;
+}
+ 
+.custom-checkbox__checkmark::after {
+  width: 7px;
+  height: 9px;
+  content: '';
+  position: absolute;
+  display: block;
+  opacity: 0;
+  transition: opacity 200ms;
+  left: 4px;
+  border: 2px solid var(--white);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.custom-checkbox_error .custom-checkbox__checkmark {
+  background-color: var(--warning-color); 
+  border-color: var(--red); 
+ }
+ 
+ .custom-checkbox_error .custom-checkbox__checkmark::after {
+  border-color: var(--red);
+ }
+ 
+@media (min-width: 500px) {
+  .custom-checkbox__checkmark:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+}
+
+.pers-info-block {
+  display:flex;
+  width: 541px;
+  margin-right: 70px;
+}
+
+.pers-info-block__descr-text {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+}
+
+.pers-info-block__descr-link {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  color: var(--blue);
+}
+
+.custom-checkbox__container {
+  margin-right: 13.95px;
+}
+
+@media (max-width: 1024px) {
+  .pers-info-block {
+    margin-bottom: 31px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pers-info-block {
+    margin-right: 0;
+    width: 100%;
+    display: block;
+  }
+}

@@ -1,0 +1,58 @@
+.string-select-group{
+  min-width: 450px;
+}
+
+.string-select {
+  min-width: 450px;
+  padding: 10px;
+  border-radius: 11px;
+  border: 1px solid var(--grey-2);
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  color: var(--main-font-color);
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  resize: none;
+}
+
+.string-select:hover {
+  border: 1px solid var(--grey-dark);
+}
+
+.string-select:focus {
+  border: 1px solid var(--grey-dark);
+  box-shadow: 0 1px 6px 0 rgb(0 0 0 / 12%);
+  cursor: text;
+  text-decoration: none;
+  color: var(--main-font-color);
+}
+
+.string-select__disabled {
+  color: var(--grey-4);
+}
+
+.string-select__error {
+  background-color: var(--warning-color); 
+  border-color: var(--yellow);
+  color: var(--orange);
+  opacity: 0.7;
+}
+
+.string-select-option__disabled {
+  color: var(--grey-4);
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+select {
+  background-image: url("../../assets/images/carret.svg");
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+}
