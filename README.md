@@ -1,6 +1,6 @@
 # test-task_registration-form
 
-Simple vue app - registration form.<br/>
+Simple vue2 app - registration form.<br/>
 Deployed with vercel.com using serverless function.
 
 ## Demo
